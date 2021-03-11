@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% load static %}
+<meta charset="utf-8">
+<title>BYR</title>
+<style type="text/css">
+    body{        
+      
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #51007a;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+        background:rgba(0, 0, 0, 0.33);
+    }
+
+    /*Navbar container */
+    .navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+    }
+
+    /*Links inside Navbar */
+    .navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    }
+
+    /* dropdown container */
+    .dropdown {
+  float: left;
+  overflow: hidden;
+    }
+
+    /* Dropdown button */
+    .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+    }
+
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+    }
+
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+  background-color: #ddd;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+  display: block;
+    }
+    div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: right;
+  width: 320px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+  <body bgcolor="black">      
+  <div class="fixed-header">
+                <div class="container">
+                  <img src="/static/header1.jpg" alt="header1" style="width:250px" >
+                </div>
+            </div>
+        <div class="navbar">
+                <a href="hp">Home</a>
+                <a href="blogs">Blogs</a>
+                <a href="bg">Building Guide</a>
+                <a href="bbu"> Builds By Us</a>
+                <a href="aboutus"> About Us</a>
+        </div> 
+        <h1 style="font-size:40px; font-family:'Times';color:white; text-align: center;">Gaming PC build guide 2019 </h1>
+        <img src="/static/bguide1.jpg" width="600" height="300" style="padding-left:380px;">
+        <p style="text-align: justify; padding-left: 50px; padding-right: 50px;"><font face="Garamond" size=5 color="white">
+            Enough fooling around, we're dialing up graphics settings and ready to start having our rig push 
+            some big-boy resolutions, which means it's time to take another look at our gaming PC build guide. 
+            Getting the ball rolling with a rig of this caliber is gonna take some decent capital to get things 
+            started, around $1,000. Expanding our budget obviously gives us more options, so before we get 
+            started, you may want to check out our guides to the best AMD motherboards and the best CPUs for 
+            gaming to point yourself in the right direction.</font>
+        </p>
+        <hr color="grey">
+        <div class="gallery">
+            <a href="https://www.pcgamer.com/best-gaming-pc/">
+              <img src="/static/bguide2.jpg" alt="aayush" width="600" height="400">
+            </a>
+            <div class="desc"><font color="white">Want to buy a prebuilt instead of building your own PC? Check out our guide to the best gaming PCs</font></div>
+        </div>
+        <p style="text-align: justify; padding-left: 50px;"><font face="Garamond" size=5 color="white">
+            For this particular project, we'd like to end up with a rig that can push 60 fps at 1080p with the graphics settings pushed to their limit. The catch is we'd like to stay within the realm of about $1,000 on all of our components. Our mid-tier gaming build has flipped to team red and has some solid headroom for upgrades with compatibility for 3rd generation Ryzen processors and a modular PSU with wattage to spare. A fun little bonus we get from an AMD processor is the ability to try our hand at overclocking our system for some added performance.
+
+            Just like our other build guides, our budget doesn't account for added peripherals like the best gaming monitor or a Windows license, important things to consider if you're building a setup from scratch. You can get around some of these costs if you're upgrading by migrating an instance of windows from a previous build, but it's always a smart idea to set aside a little extra cash for fun accessories and peripherals. 
+        </font>
+        </p>
+        <iframe style="padding-left:50px" width="602" height="364" src="https://www.youtube.com/embed/fOwYdAU-Zso" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="fixed-footer">
+          <div class="container">Copyright &copy; 2019</div>        
+      </div>
+        
+
+
+
+</body>
+</html>

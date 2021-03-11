@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% load static %}
+<meta charset="utf-8">
+<title>BYR</title>
+<style type="text/css">
+    body{        
+             
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #51007a;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+        background:rgba(0, 0, 0, 0.33);
+    }
+
+    /*Navbar container */
+    .navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+    }
+
+    /*Links inside Navbar */
+    .navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    }
+
+    /* dropdown container */
+    .dropdown {
+  float: left;
+  overflow: hidden;
+    }
+
+    /* Dropdown button */
+    .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+    }
+
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+    }
+
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+  background-color: #ddd;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+  display: block;
+    } 
+    .price{
+      border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+    }
+    .motherboard{
+        background-image: url("/static/m1.jpg");
+        background-size: cover;
+      border: 2px solid #73AD21;  
+      padding: 20px;
+  width: 1290px;
+  height: 300px;
+  position:auto;
+    }
+    .CPU{
+        background-image: url("/static/m2.jpg");
+        background-size: cover;
+      border: 2px solid #73AD21;  
+      padding: 20px;
+  width: 1290px;
+  height: 300px;
+  position:auto;
+    }
+    .GPU{
+        background-image: url("/static/m3.jpg");
+        background-size: cover;
+      border: 2px solid #73AD21;  
+      padding: 20px;
+  width: 1290px;
+  height: 300px;
+  position:auto;
+    }
+    .RAM{
+        background-image: url("/static/m4.jpg");
+        background-size: cover;
+      border: 2px solid #73AD21;  
+      padding: 20px;
+  width: 1290px;
+  height: 300px;
+  position:auto;
+    }
+    .Heatsink{
+        background-image: url("/static/m5.jpg");
+        background-size: cover;
+      border: 2px solid #73AD21;  
+      padding: 20px;
+  width: 1290px;
+  height: 300px;
+  position:auto;
+    }
+    .Cabinet{
+        background-image: url("/static/m6.jpg");
+        background-size: cover;
+      border: 2px solid #73AD21;  
+      padding: 20px;
+  width: 1290px;
+  height: 300px;
+  position:auto;
+    }
+    .PSU{
+        background-image: url("/static/m7.jpg");
+        background-size: cover;
+      border: 2px solid #73AD21;  
+      padding: 20px;
+  width: 1290px;
+  height: 300px;
+  position:auto;
+    }
+    .button {
+  background-color: #51007a;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  position: auto;
+}
+.button1 {border-radius: 12px;}
+.button2 {border-radius: 12px;}
+.button:hover {
+  background-color:#f7f7f7; /* Green */
+  color: #000000;
+}
+ 
+
+</style>
+</head>
+<body>
+    <body bgcolor="black">      
+  <div class="fixed-header">
+                <div class="container">
+                    <img src="/static/header1.jpg" alt="header1" style="width:250px">
+                </div>
+            </div>
+        <div class="navbar">
+                <a href="hp">Home</a>
+                <a href="blogs">Blogs</a>
+                <a href="bg">Building Guide</a>
+                <a href="bbu"> Builds By Us</a>
+                <a href="aboutus"> About Us</a>
+        </div>   
+        <h1 style="font-family:Perpetua;color:white">Rig #0001</h1>
+        <hr color="white">
+        <div class="price">
+          <h1 style="color:white">Estimated Price: ₹36,800</h1>
+        </div>
+        <hr color="grey">
+        <div class="motherboard">
+            <a href="https://www.amazon.in/gp/search?ie=UTF8&tag=blogmacom-21&linkCode=ur2&linkId=999dd600f14994e4bb3009b810cca706&camp=3638&creative=24630&index=computers&keywords=Zebronics%20ZEB-G31"><button class="button button1"> AMAZON </button></a>
+            <a href="https://www.flipkart.com/search?q=Zebronics%20ZEB-G31&affid=macraze00"><button class="button button2"> FLIPKART </button></a>
+        </div>
+        <div class="CPU">
+            <a href="https://www.amazon.in/gp/search?ie=UTF8&tag=blogmacom-21&linkCode=ur2&linkId=999dd600f14994e4bb3009b810cca706&camp=3638&creative=24630&index=computers&keywords=Intel%20Core%202%20Duo%20E8400"><button class="button button1"> AMAZON </button></a>
+            <a href="https://www.flipkart.com/search?q=Intel%20Core%202%20Duo%20E8400&affid=macraze00"><button class="button button2"> FLIPKART </button></a>
+        </div>
+        <div class="GPU">
+            <a href="https://www.amazon.in/gp/search?ie=UTF8&tag=blogmacom-21&linkCode=ur2&linkId=999dd600f14994e4bb3009b810cca706&camp=3638&creative=24630&index=computers&keywords=Nvidia%20GeForce%20GTX1060"><button class="button button1"> AMAZON </button></a>
+            <a href="https://www.flipkart.com/search?q=Nvidia%20GeForce%20GTX1060&affid=macraze00"><button class="button button2"> FLIPKART </button></a>
+        </div>
+        <div class="RAM">
+            <a href="https://www.amazon.in/gp/search?ie=UTF8&tag=blogmacom-21&linkCode=ur2&linkId=999dd600f14994e4bb3009b810cca706&camp=3638&creative=24630&index=computers&keywords=Kingston%20ValueRAM%20KVR800D2N6"><button class="button button1"> AMAZON </button></a>
+            <a href="https://www.flipkart.com/search?q=Kingston%20ValueRAM%20KVR800D2N6&affid=macraze00"><button class="button button2"> FLIPKART </button></a>
+        </div>
+        <div class="Heatsink">
+            <a href="https://www.amazon.in/gp/search?ie=UTF8&tag=blogmacom-21&linkCode=ur2&linkId=999dd600f14994e4bb3009b810cca706&camp=3638&creative=24630&index=computers&keywords=Deepcool%20GAMMAXX%20400"><button class="button button1"> AMAZON </button></a>
+            <a href="https://www.flipkart.com/search?q=Deepcool%20GAMMAXX%20400&affid=macraze00"><button class="button button2"> FLIPKART </button></a>
+        </div>
+        <div class="Cabinet">
+            <a href="https://www.amazon.in/gp/search?ie=UTF8&tag=blogmacom-21&linkCode=ur2&linkId=999dd600f14994e4bb3009b810cca706&camp=3638&creative=24630&index=computers&keywords=ANTEC%20VSK-4000B-U3"><button class="button button1"> AMAZON </button></a>
+            <a href="https://www.flipkart.com/search?q=ANTEC%20VSK-4000B-U3&affid=macraze00"><button class="button button2"> FLIPKART </button></a>
+        </div>
+        <div class="PSU">
+            <a href="https://www.amazon.in/gp/search?ie=UTF8&tag=blogmacom-21&linkCode=ur2&linkId=999dd600f14994e4bb3009b810cca706&camp=3638&creative=24630&index=computers&keywords=Corsair%20VS450%20450-Watt"><button class="button button1"> AMAZON </button></a>
+            <a href="https://www.flipkart.com/search?q=Corsair%20VS450%20450-Watt&affid=macraze00"><button class="button button2"> FLIPKART </button></a>
+        </div>
+        
+        
+        <div class="fixed-footer">
+                <div class="container">Copyright &copy; 2019</div>        
+            </div>
+
+</body>
+</html>

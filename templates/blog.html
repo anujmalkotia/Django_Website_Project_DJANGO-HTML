@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% load static %}
+<meta charset="utf-8">
+<title>BYR</title>
+<style type="text/css">
+    body{        
+             
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #51007a;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+        background:rgba(0, 0, 0, 0.33);
+    }
+
+    /*Navbar container */
+    .navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+    }
+
+    /*Links inside Navbar */
+    .navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    }
+
+    /* dropdown container */
+    .dropdown {
+  float: left;
+  overflow: hidden;
+    }
+
+    /* Dropdown button */
+    .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+    }
+
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+    }
+
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+  background-color: #ddd;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+  display: block;
+    } 
+    .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+</style>
+</head>
+<body>
+    <body bgcolor="black">      
+  <div class="fixed-header">
+                <div class="container">
+                    <img src="/static/header1.jpg" alt="header1" style="width:250px">
+                </div>
+            </div>
+        <div class="navbar">
+                <a href="hp">Home</a>
+                <a href="blogs">Blogs</a>
+                <a href="bg">Building Guide</a>
+                <a href="bbu"> Builds By Us</a>
+                <a href="aboutus"> About Us</a>
+        </div> 
+        <h1 style="color: white; font-family:Cambria;padding-left: 50px; padding-right: 50px;">Top 10 Gaming Blogs</h1>
+        <p style="color:gray;padding-left: 50px;padding-right: 50px; font-family: Garamond;text-align: justify;"><font size="5">The best gaming blogs offer sparky analysis and pointed reviews,
+          while some simply serve up epic belly laughs. Here are the ten best we've found</font></p>
+        <hr color="gray" size="0.5">
+        <img src="/static/blog_1.jpg" style="padding-left: 50px;">
+        <p style="color:gray;padding-left: 50px;padding-right: 50px; font-family: Garamond;text-align: justify;">
+            <font size=5>Some parts of the print media have suffered more than others from the advent of the Web, 
+            but games magazines would come near the top of any death list. Monthly titles have seen 
+            their news coverage poleaxed by hundreds of blogs and sites that are able to run with the 
+            tiniest scraps of news and screenshots as soon as they emerge.
+
+            But the best gaming blogs also offer sparky analysis and pointed reviews, 
+            while some simply serve up epic belly laughs.</font>
+        </p>
+        <h1 style="color: white; font-family:Cambria;padding-left: 50px; padding-right: 50px;">10.GoNintendo (<a href="http://www.gonintendo.com/">www.gonintendo.com</a>)</h1>
+        <p style="color:white;padding-left: 50px;padding-right: 50px; font-family: Garamond;text-align: justify;">
+           <font size=4> By sheer weight of posts alone, this is a required RSS feed or bookmark for anyone interested in Nintendo gaming, whether Wii or DS. It sucks up stories from around the 
+            Internet and aggregates them quickly, offering a central point for the Nintendo news of the day.
+          </font></p>
+        <h1 style="color: white; font-family:Cambria;padding-left: 50px; padding-right: 50px;">9.Shacknews (<a href="http://www.shacknews.com/">www.shacknews.com</a>)</h1>
+        <p style="color:white;padding-left: 50px;padding-right: 50px; font-family: Garamond;text-align: justify;">
+          <font size=4>  
+          In truth, Shacknews is one of those sites that blurs the line between a blog and a news site, so comprehensive is its mixture of news and features. With so many blogs chasing the same news, 
+            it's a worthy read because it still manages to pick up exclusives and new angles.
+          </font></p>
+        <h1 style="color: white; font-family:Cambria;padding-left: 50px; padding-right: 50px;">8. That VideoGame Blog (<a href="www.thatvideogameblog.com">www.thatvideogameblog.com</a>)</h1>
+        <p style="color:white;padding-left: 50px;padding-right: 50px; font-family: Garamond;text-align: justify;">
+          <font size=4>  
+          Another multi-format blog that digs behind the headlines, often offering posts that are as interesting to people in the games industry as to gamers. A difficult line to walk, but it manages it with aplomb. 
+            A clean design and clear writing makes it a refreshing read.
+          </font>
+          </p>
+        <h1 style="color: white; font-family:Cambria;padding-left: 50px; padding-right: 50px;">7. UK Resistance (<a href="http://www.ukresistance.co.uk/">www.ukresistance.co.uk</a>)</h1>
+        <p style="color:white;padding-left: 50px;padding-right: 50px; font-family: Garamond;text-align: justify;">
+          <font size=4>
+              Don't come here looking for 20 news posts a day, but do come if your interests encompass Sega, Suzanne Shaw and Sony-slating at every opportunity. Not that UKR is a po-faced fanboy blog: 
+              it's so consistently funny you'll never dare drink tea in front of your monitor again.
+          </font>
+        </p>
+        <h1 style="color: white; font-family:Cambria;padding-left: 50px; padding-right: 50px;">6. Touch Arcade (<a href="http://www.toucharcade.com/">www.toucharcade.com</a>)</h1>
+        <p style="color:white;padding-left: 50px;padding-right: 50px; font-family: Garamond;text-align: justify;">
+          <font size=4>
+              iPhone gaming, as you'll know if you've seen Apple's recent jabs at Nintento and Sony, is huge. Touch Arcade is one of the blogs that have sprung up to cover this burgeoning market, offering news, 
+              hands-on previews and a bustling forum full of developers talking about their latest games.
+          </font>
+        </p>
+        <h1 style="color: white; font-family:Cambria;padding-left: 50px; padding-right: 50px;">5. Guardian Games Blog (<a href="http://www.guardian.co.uk/technology/gamesblog">www.guardian.co.uk/technology/gamesblog</a>)</h1>
+        <p style="color:white;padding-left: 50px;padding-right: 50px; font-family: Garamond;text-align: justify;">
+          <font size=4>
+              As befitting the blog of a broadsheet newspaper, the Guardian's Games Blog eschews the scramble for press releases and screenshots in favour of a more measured approach, offering analysis, 
+              interviews and opinion. Always readable, and often thought-provoking.
+          </font>
+        </p>
+        <h1 style="color: white; font-family:Cambria;padding-left: 50px; padding-right: 50px;">4. Destructoid (<a href="http://www.destructoid.com/">www.destructoid.com</a>)</h1>
+        <p style="color:white;padding-left: 50px;padding-right: 50px; font-family: Garamond;text-align: justify;">
+          <font size=4>
+              There are hundreds of blogs that simply rehash games news -- none of which feature on this list. Destructoid stands out as one of the games blogs 
+              with a definable character of its own: sharp, sparky and never knowingly dull.
+          </font>
+        </p>
+        <h1 style="color: white; font-family:Cambria;padding-left: 50px; padding-right: 50px;">3. VG247 (<a href="http://www.vg247.com/">www.vg247.com</a>)</h1>
+        <p style="color:white;padding-left: 50px;padding-right: 50px; font-family: Garamond;text-align: justify;">
+          <font size=4>
+              This certainly has the most momentum of all the UK blogs on this list, having recently scooped three gongs at the Games Media Awards. They were well-deserved too: the writing is excellent, 
+              and it covers all the important news with a twist of humour.
+          </font>
+        </p>
+        <h1 style="color: white; font-family:Cambria;padding-left: 50px; padding-right: 50px;">2. Joystiq (<a href="http://www.joystiq.com/">www.joystiq.com</a>)</h1>
+        <p style="color:white;padding-left: 50px;padding-right: 50px; font-family: Garamond;text-align: justify;">
+          <font size=4>
+              One of the two heavyweights of the games blogging world (the other is below), Joystiq offers dozens of posts a day, getting news stories up at the drop of a hat, and chasing down exclusive info whenever 
+              possible. An essential source for anyone interested in gaming.
+          </font>
+        </p>
+        <h1 style="color: white; font-family:Cambria;padding-left: 50px; padding-right: 50px;">1. Kotaku (<a href="http://www.kotaku.com/">www.kotaku.com</a>)</h1>
+        <p style="color:white;padding-left: 50px;padding-right: 50px; font-family: Garamond;text-align: justify;">
+          <font size=4>
+              In truth, it's hard to choose between Kotaku and Joystiq -- a good deal of the stories they post are on the same subjects, such is the fierce competition between the two. Kotaku edges it for its humour, however, 
+              with its writers expressing their characters without becoming self-indulgent.
+          </font>
+        </p>
+        <div class="fixed-footer">
+                <div class="container">Copyright &copy; 2019</div>        
+            </div>
+
+</body>
+</html>

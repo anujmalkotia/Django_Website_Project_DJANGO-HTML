@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% load static %}
+<meta charset="utf-8">
+<title>BYR-Build Your Rig</title>
+<style type="text/css">
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        background: black;    
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #51007a;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+        background:rgba(0, 0, 0, 0.33);
+    }
+
+    .cont1{
+        padding: 10px 0;
+    }
+    .cont2{
+        background:#ffea96;
+        width:50%;
+        float:left;
+        left:600px;
+        top:100px;
+        height:
+    }
+
+    /*Navbar container */
+    .navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+    }
+
+    /*Links inside Navbar */
+    .navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    }
+
+    /* dropdown container */
+    .dropdown {
+  float: left;
+  overflow: hidden;
+    }
+
+    /* Dropdown button */
+    .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+    }
+
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+    }
+
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+  background-color: #ddd;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+  display: block;
+    }
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+table#t01{
+    width:100%;
+    border-collapse:collapse;
+    border:1px solid #FF0000;
+}
+table td{
+border:1px solid #FF0000;
+}
+</style>
+</head>
+<body>
+    
+    <div class="fixed-header">
+        <div class="container">
+            <img src="/static/header1.jpg" alt="header1" style="width:250px" >
+        </div>
+    </div>
+    <div class="navbar">
+        <a href="hp">Home</a>
+        <a href="blogs">Blogs</a>
+        <a href="bg">Building Guide</a>
+        <a href="bbu"> Builds By Us</a>
+        <a href="aboutus"> About Us</a>
+    </div>
+    <div class="container1">
+        <img src="/static/gs1.jpg" alt="gs1" style="width:600px;">        
+    </div>
+    <div>
+        <img src="/static/gs3.jpg" alt="gs3" style="width:300px;">
+    </div>
+    <div class="container2">
+        <table style="color: white;" id="t01">
+            <tr>
+                <th>ID</th>
+                <th>CPU</th>
+                <th>Motherboard</th>
+                <th>RAM</th>
+                <th>HDD</th>
+                <th>SSD</th>
+                <th>GPU</th>
+                <th>PSU</th>
+                <th>Price</th>
+                
+            </tr>
+            <tr>
+                <td>#0001</td><td>Intel Core 2 Duo E8400</td><td>Zebronics</td><td>2GB</td><td>-</td><td>-</td><td>Nvidea GeForce GTX1060 (3 GB)</td>
+                <td>450 W</td><td>₹36,800</td>
+                <td><button class="button button1"><a href="gs1">View</a></button> </td>
+            </tr>
+            <tr>
+                <td>#0002</td><td>AMD Ryzen 3 1300X</td><td>Gigabyte</td><td>8 GB</td><td>-</td><td>-</td>
+                <td>Nvidia GeForce GTX 1050 Ti (4 GB)</td><td>450 W</td><td>₹49,299</td>
+                <td><button class="button button1"><a href="gs2">View</a> </button> </td>
+            </tr>
+            <tr>
+                <td>#0003</td><td>Intel Core 2 Duo E8500</td>	<td>Mercury</td>	<td>4 GB</td><td>-</td><td>-</td>	
+                <td>Nvidia GeForce GTX 1050 Ti (4 GB)</td>	<td>650 W</td>	<td>₹39,997</td>
+                <td><button class="button button1"><a href="gs3"> View</a> </button> </td>
+            </tr>
+            <tr>
+                <td>#0004</td><td>Intel Core i3-4160</td><td>MSI</td><td>4 GB</td><td>-<td>-</td><td>
+                Nvidia GeForce GTX 1050 Ti (4 GB)</td>	<td>620 W</td>	<td>₹47,649</td>
+                <td><button class="button button1"><a href="gs4">View</a> </button> </td>
+            </tr>
+            <tr>
+                <td>#0005</td><td>Intel Core i3-4160</td><td>MSI</td><td>4 GB</td><td>-<td>-</td><td>
+                    Nvidia GeForce GTX 1050 Ti (4 GB)</td>	<td>450 W</td>	<td>₹38,249</td>
+                    <td><button class="button button1"><a href="gs5">View</a> </button> </td>
+            </tr>
+            <tr>
+                <td>#0006</td><td>Intel Core 2 Duo E8500</td><td>Mercury</td><td>4 GB</td><td>-<td>-</td>
+                <td>Nvidia GeForce GTX 1050 Ti (4 GB)</td>	<td>450 W</td>	<td>₹30,697</td>
+                <td><button class="button button1"><a href="gs6">View</a> </button> </td>
+            </tr>
+            <tr>
+                <td>#0007</td><td>AMD Ryzen 3 1300X</td><td>Gigabyte</td><td>4 GB</td><td>-<td>-</td>
+                
+                <td>Nvidia GeForce GTX 1050 Ti (4 GB)</td>	<td>450 W</td><td>₹45,400</td>
+                <td><button class="button button1"><a href="gs7">View</a> </button> </td>
+            </tr>
+            <tr>
+                <td>#0008</td><td>Intel Core i5-4460</td><td>ASUS</td><td>4 GB</td><td>-</td><td>-</td><td>
+                    Nvidia GeForce GTX 1050 Ti (4 GB)</td><td>450 W</td><td>₹46,298</td>
+                    <td><button class="button button1"><a href="gs8">View</a> </button> </td>
+            </tr>
+
+    </div>
+    
+    
+    
+   
+    
+  </div>
+    <div class="fixed-footer">
+      <div class="container">Copyright &copy; 2019</div>        
+    </div>
+</body>
+</html>
